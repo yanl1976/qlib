@@ -1,26 +1,53 @@
-# ===== Python 产物 =====
+# https://github.com/github/gitignore/blob/master/Python.gitignore
 __pycache__/
-*.py[cod]
-*.egg-info/
-.eggs/
+
+*.pyc
+*.pyd
+*.so
+*.ipynb
+.ipynb_checkpoints
+_build
 build/
 dist/
+
+*.pkl
+*.hd5
+*.csv
+
+.env
+.vim
+.nvimrc
+.vscode
+
+qlib/VERSION.txt
+qlib/data/_libs/expanding.cpp
+qlib/data/_libs/rolling.cpp
+qlib/_version.py
+examples/estimator/estimator_example/
+examples/rl/data/
+examples/rl/checkpoints/
+examples/rl/outputs/
+examples/rl_order_execution/data/
+examples/rl_order_execution/outputs/
+
+*.egg-info/
+
+# test related
+test-output.xml
+.output
+.data
+
+# special software
+mlruns/
+
+tags
+
 .pytest_cache/
 .mypy_cache/
-
-# ===== 环境/依赖 =====
-.venv/
-venv/
-env/
-*.env
-
-# ===== 编辑器/OS =====
 .vscode/
-.idea/
-.DS_Store
 
-# ===== 数据（本地 qlib 数据，体积大不入库）=====
-qlib_data/
-~/.qlib/
-*.zip
-*.tar.gz
+*.swp
+
+./pretrain
+.idea/
+.aider*
